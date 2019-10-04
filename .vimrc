@@ -3,7 +3,7 @@ set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
 """"""""""""""""""""""""""""""
-" プラグインのセットアップ
+" Plugin setup "
 """"""""""""""""""""""""""""""
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
@@ -30,16 +30,15 @@ call dein#add('honza/vim-snippets')
 
 call dein#end()
 
-" もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
-endif
+end
 
-" Required:
 filetype plugin indent on
 """"""""""""""""""""""""""""""
 
-"#####基本設定#####
-syntax on  "シンタックスハイライトを有効にする
+"Basic setting" 
+syntax on
 colorscheme slate
 set number
+set backspace=2 "make backspace work like most other programs"
