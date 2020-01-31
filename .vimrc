@@ -29,6 +29,8 @@ call dein#add('SirVer/ultisnips')
 call dein#add('honza/vim-snippets')
 call dein#add('hashivim/vim-terraform')
 call dein#add('mattn/sonictemplate-vim')
+call dein#add('chr4/nginx.vim')
+
 
 call dein#end()
 
